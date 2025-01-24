@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { KaomojiService } from './kaomoji.service';
+import { PoolPlayerService } from './poolplayer.service';
 
-describe('KaomojiService', () => {
-  let service: KaomojiService;
+describe('PoolPlayerService', () => {
+  let service: PoolPlayerService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(KaomojiService);
+    service = TestBed.inject(PoolPlayerService);
   });
 
   it('should be created', () => {
