@@ -1,0 +1,62 @@
+#    private Long id;
+#    private String name;
+#    private int yob; // year of birth
+#    private char levelOverally;
+#    private char levelPlayingForm;
+#    private char levelStrokeAccuracy;
+#    private String imageURL;
+#    private String primaryCueBrand;
+#    private int numberOfCue;
+#    private String additionalNote;
+#    @Column(nullable = false, updatable = false)
+#    private String poolPlayerCode;
+
+
+
+    {
+        "name": "Maria Dom Vibal",
+        "yob": 2003,
+        "levelOverally": "B+",
+        "levelPlayingForm": "A-",
+        "levelStrokeAccuracy": "A-",
+        "imageURL": "n/a",
+        "primaryCueBrand": 2,
+        "numberOfCue": "n/a",
+        "additionalNote": ""
+    }
+
+    {
+        "name": "Reena Yamat",
+        "yob": 2003,
+        "levelOverally": "B+",
+        "levelPlayingForm": "B",
+        "levelStrokeAccuracy": "B",
+        "imageURL": "n/a",
+        "primaryCueBrand": 2,
+        "numberOfCue": "n/a",
+        "additionalNote": ""
+    }
+
+    {
+        "name": "Jason Bautista",
+        "yob": 2004,
+        "levelOverally": "A-",
+        "levelPlayingForm": "A",
+        "levelStrokeAccuracy": "A-",
+        "imageURL": "n/a",
+        "primaryCueBrand": 2,
+        "numberOfCue": "n/a",
+        "additionalNote": ""
+    }
+
+    {
+        "name": "Yuming Chen",
+        "yob": 2003,
+        "levelOverally": "A",
+        "levelPlayingForm": "A",
+        "levelStrokeAccuracy": "A",
+        "imageURL": "n/a",
+        "primaryCueBrand": 4,
+        "numberOfCue": "n/a",
+        "additionalNote": ""
+    }
