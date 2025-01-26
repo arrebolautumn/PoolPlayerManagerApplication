@@ -1,19 +1,18 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
-import { AppComponent } from "./app.component";
+import { CommonModule } from '@angular/common';
 import { PoolPlayerService } from "./poolplayer.service";
+import { HttpClientModule, provideHttpClient } from '@angular/common/http';
 
 @NgModule({
-    declarations: [
-        AppComponent
-    ],
     imports: [
-        BrowserModule
+        BrowserModule,
+        HttpClientModule,
+        CommonModule // Ensure CommonModule is imported
     ],
-    providers: [PoolPlayerService],
-    bootstrap: [AppComponent]
+    providers: [
+        PoolPlayerService,
+        provideHttpClient()  
+    ]
 })
-
-export class AppModule{
-
-}
+export class AppModule { }
