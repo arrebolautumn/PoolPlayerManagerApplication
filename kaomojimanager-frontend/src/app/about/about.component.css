@@ -1,0 +1,12 @@
+.about {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .about h1 {
+    color: #2c3e50;
+  }
+  
+  .about p {
+    color: #34495e;
+  }
