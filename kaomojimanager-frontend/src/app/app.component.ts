@@ -32,14 +32,23 @@ export class AppComponent implements OnInit {
     });
   }
   public onOpenModal(poolplayer : PoolPlayer, mode: string): void{
-    const button = document.createElement('button');
-    button.type = 'button';
-    button.style.display = 'none';
-    button.setAttribute('data-toggle', 'modal');
-    if (mode == "add"){
-      button.setAttribute('data-target','modal');
+    const container = document.getElementById('main-container');
+    if (container) {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.style.display = 'none';
+      button.setAttribute('data-toggle', 'modal');
+      if (mode === "add") {
+        button.setAttribute('data-target', '#addPoolPlayerModal');
+      } else if (mode === "edit") {
+        button.setAttribute('data-target', '#updatePoolPlayerModal');
+      } else if (mode === "delete") {
+        button.setAttribute('data-target', '#deletePoolPlayerModal');
+      }
+      container.appendChild(button);
+      button.click();
+    } else {
+      console.error('Main container not found');
     }
-
   }
-
 }
